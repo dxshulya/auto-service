@@ -1,0 +1,25 @@
+﻿<Window x:Class="AutoServiceApp.MyWindows.Auth.RegWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoServiceApp.MyWindows.Auth"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="349.2" Width="395.6" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="surname_box" Height="23" Margin="0,33,143.8,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="47,31,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="name_box" Height="23" Margin="0,70,143.8,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="47,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lastname_box" Height="23" Margin="0,100,143.8,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="47,99,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="telephone_box" Height="23" Margin="0,131,143.8,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="47,129,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="login_box" HorizontalAlignment="Right" Height="23" Margin="0,161,143.8,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="47,160,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="47,191,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="password_box" HorizontalAlignment="Right" Margin="0,199,143.8,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="reg_btn" Content="Зарегистрироваться" Margin="47,237,143.8,0" VerticalAlignment="Top" Height="24" Click="Reg_btn_Click"/>
+
+    </Grid>
+</Window>

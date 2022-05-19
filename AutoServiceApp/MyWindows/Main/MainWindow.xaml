@@ -1,0 +1,18 @@
+﻿<Window x:Class="AutoServiceApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoServiceApp"
+        mc:Ignorable="d"
+        Title="Глваное окно" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Background="CadetBlue" Height="55" VerticalAlignment="Top" Margin="0,0,-0.4,0">
+            <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="/AutoServiceApp;component/Images/auto_logo.jpg"/>
+        </Border>
+        <Border Background="CornflowerBlue" Margin="0,0,-0.4,0" Height="30" VerticalAlignment="Bottom"/>
+        <Button x:Name="reg_btn" Content="Регистрация" Margin="248,141,268.6,0" VerticalAlignment="Top" Height="70" Click="Reg_btn_Click"/>
+        <Button x:Name="auth_btn" Content="Авторизация" Margin="248,226,268.6,0" VerticalAlignment="Top" Height="70" Click="Auth_btn_Click"/>
+
+    </Grid>
+</Window>

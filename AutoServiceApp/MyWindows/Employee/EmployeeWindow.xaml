@@ -1,0 +1,42 @@
+﻿<Window x:Class="AutoServiceApp.MyWindows.Employee.EmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoServiceApp.MyWindows.Employee"
+        mc:Ignorable="d"
+        Title="Окно сотрудника" Height="450" Width="800">
+
+    <Grid>
+        <TabControl Margin="0,0,-0.4,0">
+            <TabItem Header="Клиенты">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="clientsGrid" HorizontalAlignment="Left" Width="617" Margin="0,0,0,0.2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="*" Binding="{Binding surname}" Header="Фамилия"/>
+                            <DataGridTextColumn Width="*" Binding="{Binding name}" Header="Имя"/>
+                            <DataGridTextColumn Width="*" Binding="{Binding lastname}" Header="Отчество"/>
+                            <DataGridTextColumn Width="*" Binding="{Binding telephone}" Header="Телефон"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="add_btn" Content="Добавить клиента" HorizontalAlignment="Left" Margin="644,49,0,0" VerticalAlignment="Top" Width="116" Height="43" Click="Add_btn_Click"/>
+                    <Button x:Name="delete_btn" Content="Удалить клиента" HorizontalAlignment="Left" Margin="644,117,0,0" VerticalAlignment="Top" Width="116" Height="43" Click="Delete_btn_Click"/>
+                    <Button x:Name="change_btn" Content="Изменить клиента" HorizontalAlignment="Left" Margin="644,178,0,0" VerticalAlignment="Top" Width="116" Height="43" Click="Change_btn_Click"/>
+                    <Button x:Name="update_table_btn" Content="Обновить таблицу" Margin="644,241,28,0" VerticalAlignment="Top" Height="39" Click="Update_table_btn_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Заказы">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid IsReadOnly="true" AutoGenerateColumns="False" x:Name="bookingServicesGrid" HorizontalAlignment="Left" Width="617" Margin="0,0,0,0.2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="*" Header="Название" Binding="{Binding Service.name}"/>
+                            <DataGridTextColumn Width="*" Header="Цена" Binding="{Binding Service.price}"/>
+                            <DataGridTextColumn Width="*" Header="Заказчик" Binding="{Binding Client.surname}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="update_btn" Content="Завершить заказ" HorizontalAlignment="Left" Margin="649,91,0,0" VerticalAlignment="Top" Width="116" Height="46" Click="Update_btn_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

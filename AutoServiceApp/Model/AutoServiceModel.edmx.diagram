@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f0c977062310445599c4e6678d74d7da" Name="Diagram1">
+        <EntityTypeShape EntityType="auto_service_dbModel.Client" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_service_dbModel.Client_Service" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_service_dbModel.Employee" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_service_dbModel.Role" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_service_dbModel.Service" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_service_dbModel.User" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="auto_service_dbModel.FK_Client_Service_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_service_dbModel.FK_User_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_service_dbModel.FK_Client_Service_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_service_dbModel.FK_Client_Service_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_service_dbModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
